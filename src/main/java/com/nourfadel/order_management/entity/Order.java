@@ -2,6 +2,7 @@ package com.nourfadel.order_management.entity;
 
 import com.nourfadel.order_management.enums.OrderStatus;
 import jakarta.persistence.*;
+import lombok.Builder;
 
 import java.time.LocalDateTime;
 import java.util.ArrayList;
@@ -9,6 +10,7 @@ import java.util.List;
 
 @Entity
 @Table(name = "orders")
+@Builder
 public class Order {
 
     @Id

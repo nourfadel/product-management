@@ -2,9 +2,11 @@ package com.nourfadel.order_management.entity;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
+import lombok.Builder;
 
 @Entity
 @Table(name = "order_items")
+@Builder
 public class OrderItem {
 
     @Id

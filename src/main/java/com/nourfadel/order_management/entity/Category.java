@@ -2,13 +2,14 @@ package com.nourfadel.order_management.entity;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
+import lombok.Builder;
 
 import java.util.HashSet;
-import java.util.List;
 import java.util.Set;
 
 @Entity
 @Table(name = "categories")
+@Builder
 public class Category {
 
     @Id

@@ -1,10 +1,12 @@
 package com.nourfadel.order_management.dto.response;
 
 import com.nourfadel.order_management.enums.OrderStatus;
+import lombok.Builder;
 
 import java.time.LocalDateTime;
 import java.util.List;
 
+@Builder
 public class OrderResponse {
 
     private Long id;

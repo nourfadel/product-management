@@ -7,6 +7,7 @@ import jakarta.validation.constraints.Positive;
 import org.jspecify.annotations.NonNull;
 
 import java.util.List;
+import java.util.Set;
 
 public class ProductRequest {
 

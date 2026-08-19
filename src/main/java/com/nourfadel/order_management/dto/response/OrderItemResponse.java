@@ -1,5 +1,8 @@
 package com.nourfadel.order_management.dto.response;
 
+import lombok.Builder;
+
+@Builder
 public class OrderItemResponse {
 
     private Long id;
