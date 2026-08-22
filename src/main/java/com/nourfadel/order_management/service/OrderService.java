@@ -12,10 +12,11 @@ import com.nourfadel.order_management.entity.Product;
 import com.nourfadel.order_management.enums.OrderStatus;
 import com.nourfadel.order_management.exception.OrderNotFoundException;
 import com.nourfadel.order_management.exception.ResourceNotFoundException;
+import org.springframework.stereotype.Service;
 
-import java.math.BigDecimal;
 import java.util.List;
 
+@Service
 public class OrderService {
 
     private final OrderRepository orderRepository;
