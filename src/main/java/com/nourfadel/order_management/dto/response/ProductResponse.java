@@ -1,9 +1,7 @@
 package com.nourfadel.order_management.dto.response;
 
-import com.nourfadel.order_management.entity.Category;
 import lombok.Builder;
 
-import java.util.List;
 import java.util.Set;
 
 @Builder
@@ -17,7 +15,8 @@ public class ProductResponse {
     public ProductResponse() {
     }
 
-    public ProductResponse(String name, Long price, Set<Long> categories) {
+    public ProductResponse(Long id, String name, Long price, Set<Long> categories) {
+        this.id = id;
         this.name = name;
         this.price = price;
         this.categories = categories;

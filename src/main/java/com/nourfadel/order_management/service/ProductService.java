@@ -38,6 +38,9 @@ public class ProductService {
                 .price(request.getPrice())
                 .categories(categories)
                 .build();
+
+        productRepository.save(product);
+
         return mapToResponse(product);
     }
 

@@ -28,6 +28,8 @@ public class CategoryService {
                 .parentCategoryId(parent)
                 .build();
 
+        categoryRepository.save(category);
+
         return toResponse(category);
     }
 

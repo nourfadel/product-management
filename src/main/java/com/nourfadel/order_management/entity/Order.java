@@ -23,7 +23,8 @@ public class Order {
     private double totalAmount;
     private OrderStatus orderStatus = OrderStatus.PENDING;
 
-    @OneToMany(mappedBy = "order")
+    @Builder.Default
+    @OneToMany(mappedBy = "order",cascade = CascadeType.ALL)
     private List<OrderItem> items = new ArrayList<>();
 
     public Order() {
